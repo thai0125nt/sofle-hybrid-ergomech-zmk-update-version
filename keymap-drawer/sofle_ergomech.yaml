@@ -1,20 +1,6 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP, LEFT, DOWN]
-  lower:
-  - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
+  alpha:
   - '`'
   - '1'
   - '2'
@@ -26,174 +12,511 @@ layers:
   - '8'
   - '9'
   - '0'
-  - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - +
-  - '{'
-  - '}'
-  - '['
-  - ']'
-  - ;
-  - ':'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
+  - ''
+  - LEFT ALT
+  - Q
+  - W
   - E
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - LEFT SHIFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ESCAPE
   - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RIGHT ALT
+  - '&studio_unlock'
+  - ''
+  - ''
+  - LEFT WIN
+  - {t: SPACE, h: nav}
+  - {t: TAB, h: num}
+  - {t: ENTER, h: media}
+  - {t: BACKSPACE, h: sym}
+  - {t: DELETE, h: func}
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
   - LEFT
   - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
+  nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT WIN
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ;
+  - REDO
   - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - COPY
+  - CUT
+  - UNDO
+  - ''
+  - ''
+  - KP ENTER
+  - SPACE
+  - TAB
+  - BACKSPACE
+  - .
+  - LEFT
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - CAPSLOCK
+  - ''
+  - ''
+  - (
+  - '['
+  - ']'
+  - )
+  - /
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - INSERT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
-  adjust:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  media:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - STOP
+  - PLAY PAUSE
+  - MUTE
+  - ''
+  - ''
+  - MUTE
+  - PLAY PAUSE
+  - STOP
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - PREVIOUS
+  - VOL DN
+  - VOLUME UP
+  - NEXT
+  - NEXT
+  - VOLUME UP
+  - VOL DN
+  - PREVIOUS
+  - ''
+  - ''
   - BT CLR
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - BT CLR
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
   - ''
   - ''
   - ''
   - {type: held}
   - ''
   - ''
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT WIN
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ;
+  - ':'
+  - '7'
+  - '8'
+  - '9'
+  - '%'
+  - ''
+  - shiftNum
+  - KP ENTER
+  - SPACE
+  - TAB
+  - BACKSPACE
+  - .
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - ''
+  - (
+  - '['
+  - ']'
+  - )
+  - /
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - '0'
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  shiftNum:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT WIN
+  - LEFT ALT
+  - LCTRL
+  - LEFT SHIFT
+  - ;
+  - '~'
+  - ^
+  - '#'
+  - $
+  - '!'
+  - '|'
+  - {type: held}
+  - KP ENTER
+  - SPACE
+  - TAB
+  - BACKSPACE
+  - .
+  - '='
+  - <
+  - '{'
+  - '}'
+  - '>'
+  - '@'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
+  - .
+  - (
+  - '['
+  - ']'
+  - )
+  - ','
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
   - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  sym:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - '{'
+  - ''''
+  - '"'
+  - '}'
+  - '?'
+  - ;
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - LEFT WIN
+  - ''
+  - '#'
+  - ^
+  - '='
+  - _
+  - $
+  - '*'
+  - .
+  - BACKSPACE
+  - TAB
+  - SPACE
+  - KP ENTER
+  - shiftSym
+  - '~'
+  - <
+  - '|'
+  - '-'
+  - '>'
+  - /
+  - /
+  - (
+  - '['
+  - ']'
+  - )
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  shiftSym:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '%'
+  - '`'
+  - (
+  - )
+  - ;
+  - ','
+  - ;
+  - LEFT SHIFT
+  - LCTRL
+  - LEFT ALT
+  - LEFT WIN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - BACKSPACE
+  - TAB
+  - SPACE
+  - KP ENTER
+  - {type: held}
+  - '@'
+  - '&'
+  - '['
+  - ']'
+  - +
+  - \
+  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  func:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - PRINTSCREEN
+  - ''
+  - LEFT SHIFT
+  - RCTRL
+  - LEFT ALT
+  - LEFT WIN
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
